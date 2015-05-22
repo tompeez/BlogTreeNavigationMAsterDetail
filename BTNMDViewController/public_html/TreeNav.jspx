@@ -13,7 +13,7 @@
           <f:facet name="center">
             <af:panelSplitter id="ps1">
               <f:facet name="first">
-                <af:tree value="#{bindings.Departments.treeModel}" var="node" selectionListener="#{TreeNavigationBean.onTreeNodeSelection}"
+                <af:tree value="#{bindings.Departments.treeModel}" var="node" selectionListener="#{TreeNavigationBean.onTreeSelection}"
                          rowSelection="single" id="t1" displayRow="selected">
                   <f:facet name="nodeStamp">
                     <af:outputText value="#{node}" id="ot2"/>
