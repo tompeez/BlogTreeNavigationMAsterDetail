@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig version="11.1" xmlns="http://xmlns.oracle.com/bc4j/configuration">
+   <AppModuleConfigBag ApplicationName="de.hahn.blog.treenavigationmasterdetail.model.adfbc.service.BTNMDAppModule">
+      <AppModuleConfig DeployPlatform="LOCAL" jbo.project="de.hahn.blog.treenavigationmasterdetail.model.BTNMDModel" name="BTNMDAppModuleLocal" ApplicationName="de.hahn.blog.treenavigationmasterdetail.model.adfbc.service.BTNMDAppModule">
+         <Security AppModuleJndiName="de.hahn.blog.treenavigationmasterdetail.model.adfbc.service.BTNMDAppModule"/>
+         <Custom JDBCDataSource="jdbc/HRConnDS"/>
+      </AppModuleConfig>
+      <AppModuleConfig DeployPlatform="LOCAL" jbo.project="de.hahn.blog.treenavigationmasterdetail.model.BTNMDModel" name="BTNMDAppModuleShared" ApplicationName="de.hahn.blog.treenavigationmasterdetail.model.adfbc.service.BTNMDAppModule">
+         <AM-Pooling jbo.ampool.dynamicjdbccredentials="false" jbo.ampool.isuseexclusive="false" jbo.ampool.maxpoolsize="1" jbo.ampool.resetnontransactionalstate="false"/>
+         <Security AppModuleJndiName="de.hahn.blog.treenavigationmasterdetail.model.adfbc.service.BTNMDAppModule"/>
+         <Custom JDBCDataSource="jdbc/HRConnDS"/>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+</BC4JConfig>

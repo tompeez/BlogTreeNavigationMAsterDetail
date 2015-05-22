@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SDM>
+   <OverallProperties
+      id="OverallProperties1"/>
+   <View
+      id="View2">
+      <property
+         name="activityId">TreeNav</property>
+      <property
+         name="page">/TreeNav.jspx</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>TreeNav&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="y">216.03125</property>
+      <property
+         name="x">633.0</property>
+   </View>
+</SDM>

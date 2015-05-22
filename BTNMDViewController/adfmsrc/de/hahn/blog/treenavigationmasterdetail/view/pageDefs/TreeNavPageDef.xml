@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="11.1.1.66.73" id="TreeNavPageDef"
+                Package="de.hahn.blog.treenavigationmasterdetail.view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="Departments" RangeSize="25" DataControl="BTNMDAppModuleDataControl" id="DepartmentsIterator"/>
+    <iterator Binds="EmployeesOfDepartments" RangeSize="25" DataControl="BTNMDAppModuleDataControl" id="EmployeesOfDepartmentsIterator"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="DepartmentsIterator" id="Departments">
+      <nodeDefinition DefName="de.hahn.blog.treenavigationmasterdetail.model.adfbc.views.DepartmentsView" Name="Departments0"
+                      TargetIterator="#{bindings.DepartmentsIterator}">
+        <AttrNames>
+          <Item Value="DepartmentId"/>
+          <Item Value="DepartmentName"/>
+        </AttrNames>
+        <Accessors>
+          <Item Value="EmployeesView"/>
+        </Accessors>
+      </nodeDefinition>
+      <nodeDefinition DefName="de.hahn.blog.treenavigationmasterdetail.model.adfbc.views.EmployeesView" Name="Departments1"
+                      TargetIterator="#{bindings.EmployeesOfDepartmentsIterator}">
+        <AttrNames>
+          <Item Value="EmployeeId"/>
+          <Item Value="FirstName"/>
+          <Item Value="LastName"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+    <attributeValues IterBinding="EmployeesOfDepartmentsIterator" id="EmployeeId">
+      <AttrNames>
+        <Item Value="EmployeeId"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="EmployeesOfDepartmentsIterator" id="FirstName">
+      <AttrNames>
+        <Item Value="FirstName"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="EmployeesOfDepartmentsIterator" id="LastName">
+      <AttrNames>
+        <Item Value="LastName"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="EmployeesOfDepartmentsIterator" id="Email">
+      <AttrNames>
+        <Item Value="Email"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="EmployeesOfDepartmentsIterator" id="PhoneNumber">
+      <AttrNames>
+        <Item Value="PhoneNumber"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="EmployeesOfDepartmentsIterator" id="HireDate">
+      <AttrNames>
+        <Item Value="HireDate"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="EmployeesOfDepartmentsIterator" id="JobId">
+      <AttrNames>
+        <Item Value="JobId"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="EmployeesOfDepartmentsIterator" id="Salary">
+      <AttrNames>
+        <Item Value="Salary"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="EmployeesOfDepartmentsIterator" id="CommissionPct">
+      <AttrNames>
+        <Item Value="CommissionPct"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="EmployeesOfDepartmentsIterator" id="ManagerId">
+      <AttrNames>
+        <Item Value="ManagerId"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="EmployeesOfDepartmentsIterator" id="DepartmentId">
+      <AttrNames>
+        <Item Value="DepartmentId"/>
+      </AttrNames>
+    </attributeValues>
+  </bindings>
+</pageDefinition>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <view id="TreeNav">
+    <page>/TreeNav.jspx</page>
+  </view>
+  <managed-bean id="__8">
+    <managed-bean-name id="__5">TreeNavigationBean</managed-bean-name>
+    <managed-bean-class id="__6">de.hahn.blog.treenavigationmasterdetail.view.beans.TreeNavigationBean</managed-bean-class>
+    <managed-bean-scope id="__7">request</managed-bean-scope>
+  </managed-bean>
+</adfc-config>
